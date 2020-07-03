@@ -76,6 +76,7 @@ bool lista<T>::pertenece(int Clave){
 	while(aux != NULL){
 		if(Clave == aux->clave){
 			resultado = true;
+			break;
 		}else{
 			aux = aux->sig;
 		}
@@ -110,10 +111,10 @@ nodo<T> lista<T>::buscar(int Clave)
     		{
     		if(Clave == aux->clave){
     			salida = aux;
-    			cout<<"dato encontrado: "<<endl;
+    			cout<<"dato encontrado: ";
     			break;
     		}else{
-    			cout<<"No existe el dato"<<endl;
+    			cout<<"No existe el dato";
 				aux = aux->sig;
 			}
 		
